@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/select_visualization_dest">
+    <fragment
+        android:id="@+id/select_visualization_dest"
+        android:name="com.mvaresedev.swapp.ui.select_visualization.SelectVisualizationFragment"
+        android:label="select_visualization"
+        tools:layout="@layout/fragment_select_visualization" >
+        <action
+            android:id="@+id/action_character_items"
+            app:destination="@id/character_items_dest"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/character_items_dest"
+        android:name="com.mvaresedev.swapp.ui.character_items.CharacterItemsFragment"
+        android:label="items"
+        tools:layout="@layout/fragment_character_items" >
+        <argument
+            android:name="viewType"
+            app:argType="com.mvaresedev.swapp.ui.character_items.ViewStyle" />
+        <action
+            android:id="@+id/action_character_detail"
+            app:destination="@id/character_detail_dest"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/character_detail_dest"
+        android:name="com.mvaresedev.swapp.ui.character_detail.CharacterDetailFragment"
+        android:label="detail"
+        tools:layout="@layout/fragment_character_detail" >
+        <argument
+            android:name="character"
+            app:argType="com.mvaresedev.swapp.domain.models.Character"
+            app:nullable="false" />
+    </fragment>
+</navigation>

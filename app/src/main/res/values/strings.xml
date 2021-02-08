@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">SWAPP</string>
+    <string name="welcome">Welcome to</string>
+    <string name="welcome_app_title">STAR\nWARS\nAPP</string>
+    <string name="select_visualization">Select how items should appears:</string>
+    <string name="select_visualization_list">LIST</string>
+    <string name="select_visualization_grid">GRID</string>
+    <string name="retry_loading">Try again</string>
+    <string name="generic_error_message">Ops! Something went wrong.</string>
+    <string name="characters_title">Characters</string>
+    <string name="detail_characteristics">Characteristics</string>
+    <string name="detail_film">Films</string>
+    <string name="detail_vehicles">Vehicles</string>
+    <string name="detail_height">Height:</string>
+    <string name="detail_weight">Weight:</string>
+    <string name="detail_birth_year">Birth year:</string>
+    <string name="detail_skin_color">Skin color:</string>
+    <string name="detail_hair_color">Hair color:</string>
+    <string name="detail_eye_color">Eye color:</string>
+    <string name="detail_gender">Gender:</string>
+    <string name="vehicle_class_format">Class: %s</string>
+    <string name="vehicle_model_format">Model: %s</string>
+    <string name="vehicle_max_speed_format">Max Speed: %s</string>
+    <string name="vehicle_cost_format">Cost: %s</string>
+    <string name="vehicle_length_format">Length: %s</string>
+    <string name="no_vehicles_driven">This character did not drive any vehicles</string>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/light_grey"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="18dp"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="8dp"
+            android:textSize="12sp"
+            style="@style/TextView.Light"
+            tools:text="Corellia Mining Corporation"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/manufacturer_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="20sp"
+            style="@style/TextView.Bold"
+            tools:text="Sand Crawler"
+            android:gravity="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/manufacturer_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/name_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            style="@style/TextView"
+            tools:text="Model: starfighter"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/name_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/model_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            style="@style/TextView"
+            tools:text="Class: starfighter"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/model_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/class_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            style="@style/TextView"
+            tools:text="Cost: 15000"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/class_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/cost_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            style="@style/TextView"
+            tools:text="Length: 12m"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/cost_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/length_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="12sp"
+            android:layout_marginBottom="8dp"
+            style="@style/TextView"
+            tools:text="MaxSpeed: 1200"
+            android:textColor="@color/black"
+            app:layout_constraintTop_toBottomOf="@id/length_txt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:id="@+id/maxSpeed_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

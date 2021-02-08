@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_font_size">18sp</dimen>
+    <dimen name="error_anim_size">50dp</dimen>
+    <dimen name="horizontal_page_margin">15dp</dimen>
+    <dimen name="toolbar_textSize">36sp</dimen>
+    <dimen name="detail_avatarSize">170dp</dimen>
+</resources>
